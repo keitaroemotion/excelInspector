@@ -15,8 +15,8 @@ class XlsxReader
 
     def self.checkCell(row, kw)
         row.cells.each do |cell|
-				    if cell.value.include? kw
-						    return [self::pop(row,0), self::pop(row,1), self::pop(row,2)]
+            if cell.value.include? kw
+                return [self::pop(row,0), self::pop(row,1), self::pop(row,2)]
             end 
         end
         return []
