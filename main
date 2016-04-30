@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "/Users/keisugano/Fabrica/Excel/XlsReader"
+require "/Users/keisugano/Fabrica/Excel/XlsxReader"
+
+kw = 'ムーミン'
+
+#if file endswith .xls
+XlsReader::displaySheets(XlsReader::getSheets('/Users/keisugano/Documents/test1.xls', kw))
+XlsxReader::displaySheets(XlsxReader::getSheets('/Users/keisugano/Documents/test1.xlsx', kw))
+

@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+
+def play()
+    begin
+        system "./main"
+    rescue
+    end
+    sleep 1
+    play()
+end
+play()
