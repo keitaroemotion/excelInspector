@@ -6,11 +6,11 @@ require 'colorize'
 class XlsxReader
 
   def self.pop(row, i)
-     begin
-         return "#{row.cells[i].value}"  
-     rescue
-         return ""
-     end
+      begin
+          return "#{row.cells[i].value}"  
+      rescue
+          return ""
+      end
   end
 
 	def self.checkCell(row, kw)
