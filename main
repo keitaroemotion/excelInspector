@@ -4,9 +4,13 @@ require "/Users/keisugano/Fabrica/Excel/XlsReader"
 require "/Users/keisugano/Fabrica/Excel/XlsxReader"
 require "/Users/keisugano/Fabrica/Excel/Util"
 
-kw = 'ムーミン'
+kw = ARGV[0]
+if ARGV[0] == nil
+    print "Keyword:"
+    kw = $stdin.gets.chomp
+end
 
 #if file endswith .xls
 Util::displaySheets(XlsReader::getSheets('/Users/keisugano/Documents/test1.xls', kw))
-Util::displaySheets(XlsxReader::getSheets('/Users/keisugano/Documents/test1.xlsx', kw))
+Util::displaySheets(XlsxReader::getSheets('/Users/keisugano/Documents/test1.xlsx', kw), "red")
 

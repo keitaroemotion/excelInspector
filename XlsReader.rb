@@ -29,6 +29,7 @@ class XlsReader
         book.worksheets.each do |sheet|
             res = self::getSheet(sheet, kw, res)
         end
+        Util.displayFile(res, file)
         return res
     end
 

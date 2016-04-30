@@ -3,7 +3,7 @@
 
 def play()
     begin
-        system "./main"
+        system "./main sample"
     rescue
     end
     sleep 1
