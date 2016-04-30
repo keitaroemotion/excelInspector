@@ -1,6 +1,15 @@
-
+#
+# Utility Class
+# 
+# Common Utility Class 
+# This class provides functions
+# of not File-Type Specific ones
+#
+# @author: Kei Sugano
+#
 
 class Util 
+
     def self.rmNilList(lis)
        newlis = []
        lis.each do |l|
