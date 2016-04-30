@@ -2,10 +2,11 @@
 
 require "/Users/keisugano/Fabrica/Excel/XlsReader"
 require "/Users/keisugano/Fabrica/Excel/XlsxReader"
+require "/Users/keisugano/Fabrica/Excel/Util"
 
 kw = 'ムーミン'
 
 #if file endswith .xls
-XlsReader::displaySheets(XlsReader::getSheets('/Users/keisugano/Documents/test1.xls', kw))
-XlsxReader::displaySheets(XlsxReader::getSheets('/Users/keisugano/Documents/test1.xlsx', kw))
+Util::displaySheets(XlsReader::getSheets('/Users/keisugano/Documents/test1.xls', kw))
+Util::displaySheets(XlsxReader::getSheets('/Users/keisugano/Documents/test1.xlsx', kw))
 
