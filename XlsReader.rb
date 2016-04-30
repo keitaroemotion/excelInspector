@@ -32,10 +32,4 @@ class XlsReader
         return res
     end
 
-    def self.displaySheets(res)
-        res.each do |r|
-            puts "#{r}".chomp
-        end
-    end
-
 end
